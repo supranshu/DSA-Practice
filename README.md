@@ -1,1 +1,1 @@
-It's isn,t started yet n-word
+It's isn't started yet n-word
