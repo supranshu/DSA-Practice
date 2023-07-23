@@ -3,6 +3,8 @@ import java.util.Scanner;
 
 public class ArrayListprac{
     public static void main(String[] args){
+
+        //ArrayList
         Scanner in = new Scanner(System.in);
 
         ArrayList<Integer> list=new ArrayList<>();
