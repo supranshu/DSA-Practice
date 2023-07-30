@@ -6,7 +6,7 @@ public class Ceiling {
     public static void main(String[] args){
         int[] arr={2,3,5,6,8,9,12,13,14,16,19,21};
 
-        int ans=ceilingNumber(arr,1);
+        int ans=ceilingNumber(arr,4);
         System.out.println("Ceiling number is: "+ans);
     }
     public static int ceilingNumber(int[] arr,int target){
@@ -16,7 +16,7 @@ public class Ceiling {
             int mid=start+(end-start)/2;
             if(target<arr[mid])
             {   
-                tar[i++]=arr[mid];
+                
                 end=mid-1;
             }
             else if(target>arr[mid]){
@@ -31,9 +31,9 @@ public class Ceiling {
             
         } 
            
-        return tar[0];
+        return arr[start];
 
-}
+    }
   
 }
 
