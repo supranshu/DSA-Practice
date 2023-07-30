@@ -14,14 +14,14 @@ public class Ceiling {
         int[] tar=new int[20];
         while(start<=end){
             int mid=start+(end-start)/2;
-            if(arr[mid]<=target)
+            if(target<arr[mid])
             {   
-                
-                start=mid+1;
-            }
-            else if(arr[mid]>target){
                 tar[i++]=arr[mid];
                 end=mid-1;
+            }
+            else if(target>arr[mid]){
+                
+                start=mid+1;
 
             }
             else{
@@ -30,14 +30,10 @@ public class Ceiling {
             
             
         } 
-        int value=smallestNum(tar);     
+           
         return tar[0];
 
 }
-    private static int smallestNum(int[] tar) {
-        int value=0,i=0;
-        
-        return tar[i];
-    }
+  
 }
 
