@@ -13,10 +13,10 @@ public class Ceiling {
     }
     private static int floorNumber(int[] arr, int target) {
         int start=0,end=arr.length-1,i=0;
-        int[] tar=new int[20];
+        
         while(start<=end){
             int mid=start+(end-start)/2;
-            if(target<arr[mid])
+            if(target<=arr[mid])
             {   
                 
                 end=mid-1;
@@ -37,7 +37,7 @@ public class Ceiling {
     }
     public static int ceilingNumber(int[] arr,int target){
         int start=0,end=arr.length-1,i=0;
-        int[] tar=new int[20];
+        
         while(start<=end){
             int mid=start+(end-start)/2;
             if(target<arr[mid])
